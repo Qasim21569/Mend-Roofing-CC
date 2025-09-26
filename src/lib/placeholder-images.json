@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Background image for the hero section showing a modern house roof.",
+      "imageUrl": "https://images.unsplash.com/photo-1554676187-e9a89ddb659e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjByb29mfGVufDB8fHx8MTc1ODgxNzE1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern roof"
+    },
+    {
+      "id": "why-choose-us",
+      "description": "Good Guys company logo",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS3.png?alt=media&token=1e778559-5ca2-4999-b705-015633edea42",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "gallery-home1",
+      "description": "A newly installed roof on a suburban house.",
+      "imageUrl": "https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/medium/975d091a-9998-4b48-bf85-3857e5373af3.jpg",
+      "imageHint": "new roof"
+    },
+    {
+      "id": "gallery-home2",
+      "description": "A large commercial building roof.",
+      "imageUrl": "https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/medium/83910682-4fce-48ad-8354-961d59094c90.jpg",
+      "imageHint": "commercial roof"
+    },
+    {
+      "id": "gallery-home3",
+      "description": "Close-up of different roof types.",
+      "imageUrl": "https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/medium/b77cc554-44e4-48ff-8aaf-e361fb4876de.jpg",
+      "imageHint": "roof types"
+    },
+    {
+      "id": "gallery-home4",
+      "description": "Siding replacement project on a house.",
+      "imageUrl": "/images/siding/replacement/replacement1.png",
+      "imageHint": "siding replacement"
+    },
+    {
+      "id": "testimonial-avatar1",
+      "description": "Avatar for a satisfied client.",
+      "imageUrl": "https://images.unsplash.com/photo-1624486217002-846e654ac969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwc21pbGluZ3xlbnwwfHx8fDE3NTg3OTQzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "testimonial-avatar2",
+      "description": "Avatar for another satisfied client.",
+      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU4Nzg4OTc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
+}
