@@ -9,8 +9,8 @@ import { cn } from '@/lib/utils';
 import { StormReport } from '@/components/storm-report';
 
 export const metadata: Metadata = {
-  title: 'Good Guys',
-  description: 'A rebuild of the Good Guys Roofing website.',
+  title: 'Mend Roofing | Affordable & Reliable Roofing Services in Houston, TX',
+  description: 'Expert roof repair, replacement, and installation for residential and commercial properties in Houston and Southeast Texas. GAF Certified, fully licensed & insured. 24/7 emergency services available.',
 };
 
 export default function RootLayout({

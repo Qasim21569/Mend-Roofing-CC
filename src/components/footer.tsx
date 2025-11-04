@@ -4,14 +4,14 @@ import { Home, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { Star } from "lucide-react";
 
-function GoodGuysLogo() {
+function MendRoofingLogo() {
   return (
     <Image 
-        src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS4.png?alt=media&token=bf7dfedc-1dd6-40ea-9b4e-89df016a0a81" 
-        alt="Good Guys Logo"
+        src="/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp" 
+        alt="Mend Roofing - Repair, Restore, Protect"
         width={200}
-        height={50}
-        className="h-auto"
+        height={60}
+        className="h-auto w-auto max-h-14"
     />
   );
 }
@@ -31,10 +31,10 @@ export function Footer() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                 <div className="space-y-4">
                 <Link href="/" className="flex items-center gap-2" prefetch={false}>
-                    <GoodGuysLogo />
+                    <MendRoofingLogo />
                 </Link>
                 <p className="text-sm text-primary-foreground/80">
-                    Providing top-quality roofing services for residential and commercial properties. Our commitment is to quality, reliability, and customer satisfaction.
+                    Mend Roofing delivers dependable roof repair and replacement services in Southeast Texas, utilizing premium materials to safeguard homes. GAF Certified with over 20 years of combined experience.
                 </p>
                 </div>
                 <div>
@@ -49,18 +49,21 @@ export function Footer() {
                 <div>
                 <h3 className="mb-4 text-lg font-semibold">Services</h3>
                 <ul className="space-y-2">
-                    <li><span className="text-sm text-primary-foreground/80">Roof Installation</span></li>
-                    <li><span className="text-sm text-primary-foreground/80">Roof Repair</span></li>
+                    <li><span className="text-sm text-primary-foreground/80">Residential Roofing</span></li>
                     <li><span className="text-sm text-primary-foreground/80">Commercial Roofing</span></li>
-                    <li><span className="text-sm text-primary-foreground/80">Siding & Gutters</span></li>
+                    <li><span className="text-sm text-primary-foreground/80">Roof Repair & Replacement</span></li>
+                    <li><span className="text-sm text-primary-foreground/80">Storm Damage Repair</span></li>
                 </ul>
                 </div>
                 <div>
                 <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
                 <address className="space-y-2 text-sm not-italic text-primary-foreground/80">
-                    <p>Fort Worth, Texas (Serving Tarrant, Johnson, and Parker counties)</p>
-                    <p>Email: <a href="mailto:[Your Email Address]" className="hover:text-accent">[Your Email Address]</a></p>
-                    <p>Phone: <a href="tel:817-233-4524" className="hover:text-accent">817-233-4524</a></p>
+                    <p className="font-semibold">Katy Office</p>
+                    <p>24285 Katy Fwy Suite 300-18<br/>Katy, TX 77494</p>
+                    <p>Phone: <a href="tel:346-236-3652" className="hover:text-accent">(346) 236-3652</a></p>
+                    <p className="font-semibold mt-3">Spring Office</p>
+                    <p>24624 Interstate 45 200<br/>Spring, TX 77386</p>
+                    <p>Phone: <a href="tel:281-305-3162" className="hover:text-accent">(281) 305-3162</a></p>
                 </address>
                 </div>
             </div>
@@ -83,7 +86,7 @@ export function Footer() {
       </div>
       <div className="border-t border-primary-foreground/20">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row md:px-6">
-          <p className="text-sm text-primary-foreground/60">&copy; {new Date().getFullYear()} Good Guys. All Rights Reserved.</p>
+          <p className="text-sm text-primary-foreground/60">&copy; {new Date().getFullYear()} Mend Roofing. All Rights Reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-primary-foreground/80 hover:text-accent" aria-label="Facebook" prefetch={false}><Facebook className="h-5 w-5" /></Link>
             <Link href="#" className="text-primary-foreground/80 hover:text-accent" aria-label="Google" prefetch={false}><GoogleIcon /></Link>

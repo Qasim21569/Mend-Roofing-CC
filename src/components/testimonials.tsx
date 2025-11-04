@@ -20,7 +20,7 @@ const testimonials = [
     name: "Michael R.",
     location: "Fort Worth (Tarrant)",
     avatarId: "testimonial-avatar1",
-    quote: "Good Guys replaced our roof after the last hail storm. The entire process was seamless, from the initial inspection to dealing with our insurance. The crew was professional, fast, and left our property spotless. Highly recommend!",
+    quote: "Mend Roofing replaced our roof after the last hail storm. The entire process was seamless, from the initial inspection to dealing with our insurance. The crew was professional, fast, and left our property spotless. Highly recommend!",
     rating: 5,
   },
   {
@@ -71,7 +71,7 @@ export function Testimonials() {
                     HEAR FROM LOCAL CUSTOMERS
                 </h2>
                 <p className="content-description text-primary-foreground/80">
-                    Learn why homeowners and businesses across the area turn to Good Guys for full-scale remodeling projects and attentive customer service.
+                    Learn why homeowners and businesses across the area turn to Mend Roofing for full-scale remodeling projects and attentive customer service.
                 </p>
             </div>
             <Button asChild variant="outline" className="mt-6 md:mt-0 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary shrink-0">

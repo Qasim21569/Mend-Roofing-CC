@@ -5,7 +5,7 @@ import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
-const logoUrl = "https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS3.png?alt=media&token=1e778559-5ca2-4999-b705-015633edea42";
+const logoUrl = "/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp";
 
 
 export function Offers() {
@@ -16,7 +16,7 @@ export function Offers() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center mb-8">
             <div>
-                <p className="text-sm text-red-600 font-semibold" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>EXCLUSIVE OFFERS</p>
+                <p className="text-sm text-primary font-semibold" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>EXCLUSIVE OFFERS</p>
                 <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>LIMITED TIME OFFERS</h2>
             </div>
           <Button asChild variant="outline">

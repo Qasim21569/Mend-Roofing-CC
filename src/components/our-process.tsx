@@ -28,7 +28,7 @@ const processSteps = [
     }
 ];
 
-const logoUrl = "https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS3.png?alt=media&token=1e778559-5ca2-4999-b705-015633edea42";
+const logoUrl = "/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp";
 
 export function OurProcess() {
     return (

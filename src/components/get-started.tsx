@@ -326,7 +326,7 @@ export function GetStarted({ subtitle }: GetStartedProps) {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel className="text-xs font-normal text-primary-foreground/70">
-                        By checking this box, I authorize Good Guys to send me marketing calls and text messages at the number provided above, including by using an autodialer or a prerecorded message. I understand that I am not required to give this authorization as a condition of doing business with Good Guys. By checking this box, I am also agreeing to Good Guys's <Link href="#" className="underline">Terms of Use</Link> and <Link href="#" className="underline">Privacy Policy</Link>.
+                        By checking this box, I authorize Mend Roofing to send me marketing calls and text messages at the number provided above, including by using an autodialer or a prerecorded message. I understand that I am not required to give this authorization as a condition of doing business with Mend Roofing. By checking this box, I am also agreeing to Mend Roofing's <Link href="#" className="underline">Terms of Use</Link> and <Link href="#" className="underline">Privacy Policy</Link>.
                         </FormLabel>
                         <FormMessage />
                       </div>

@@ -14,9 +14,9 @@ import { Blog } from '@/components/blog';
 import { CommunityInvolvement } from '@/components/community-involvement';
 
 export const metadata: Metadata = {
-  title: "Good Guys | Expert Roofing Services",
-  description: "Your trusted roofing experts for residential and commercial roof repair, installation, and maintenance.",
-  keywords: "roofing, roof repair, roof installation, commercial roofing, Good Guys",
+  title: "Mend Roofing | Expert Roofing Services in Houston, TX",
+  description: "Affordable & Reliable Roofing Services in Houston, TX. Expert roof repair, replacement, and installation for residential and commercial properties. GAF Certified with 20+ years experience.",
+  keywords: "roofing, roof repair, roof installation, commercial roofing, Houston roofing, Mend Roofing, GAF certified, roof replacement Houston, Spring TX roofing, Katy TX roofing",
 };
 
 export default function Home() {

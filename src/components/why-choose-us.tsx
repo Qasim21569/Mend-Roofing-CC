@@ -49,7 +49,7 @@ export function WhyChooseUs() {
                     Protective Fort Worth Roofing Company
                 </h2>
                 <p className="content-description text-primary-foreground/80 mb-8 max-w-lg">
-                    At Good Guys Remodeling, we take pride in strengthening properties in our community against extreme weather conditions. We're here to make the roof replacement, storm damage restoration, and home exterior remodeling as easy as possible. Work with a highly trained team of local professionals that make us the "Best Roofer in Fort Worth".
+                    At Mend Roofing Remodeling, we take pride in strengthening properties in our community against extreme weather conditions. We're here to make the roof replacement, storm damage restoration, and home exterior remodeling as easy as possible. Work with a highly trained team of local professionals that make us the "Best Roofer in Fort Worth".
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

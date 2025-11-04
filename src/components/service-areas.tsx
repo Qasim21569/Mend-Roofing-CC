@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const apiKey = "AIzaSyBm0LkkTim0WuseYwItow8Cs71QC077VOc";
-const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Fort+Worth,TX&center=32.7555,-97.3308&zoom=10`;
+const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Houston,TX&center=29.7604,-95.3698&zoom=10`;
 
 export function ServiceAreas() {
     return (
@@ -26,10 +26,10 @@ export function ServiceAreas() {
                         <div className="flex flex-col justify-center">
                             <p className="text-sm font-bold text-destructive uppercase mb-2" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>SERVICE AREAS</p>
                             <h3 className="text-3xl font-bold text-gray-800 uppercase mb-4" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>
-                                YOUR TRUSTED FORT WORTH ROOFER
+                                YOUR TRUSTED HOUSTON ROOFER
                             </h3>
                             <p className="text-muted-foreground mb-6">
-                                The harsh Texas weather can quickly take its toll on local homes. But as a family-owned roofer, Good Guys knows what you need to stay strong. Get in touch with an expert roofer in your neighborhood to schedule an in-home inspection or to receive free same-day pricing.
+                                Serving Houston and Southeast Texas, Mend Roofing protects your home from harsh weather conditions with premium roofing solutions. As a locally owned and GAF Certified roofing company, we provide expert service across Spring, Katy, The Woodlands, and surrounding areas. Schedule a free inspection today.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Button asChild className="bg-destructive hover:bg-destructive/90">

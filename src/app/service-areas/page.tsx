@@ -4,32 +4,39 @@
 import { GetStarted } from "@/components/get-started";
 
 const serviceAreas = [
-    'Fort Worth (Tarrant)',
-    'Arlington (Tarrant)',
-    'Grand Prairie (Tarrant / Dallas / Ellis / Johnson mix)',
-    'Burleson (Johnson / Tarrant)',
-    'Keller (Tarrant)',
-    'North Richland Hills (Tarrant)',
-    'Mansfield (Tarrant / Johnson)',
-    'Hurst (Tarrant)',
-    'Grapevine (Tarrant)',
-    'Azle (Parker)',
+    'Spring',
+    'Katy',
+    'The Woodlands',
+    'Tomball',
+    'Conroe',
+    'Cypress',
+    'Magnolia',
+    'Montgomery',
+    'Pearland',
+    'Sugar Land',
+    'Pasadena',
+    'Downtown Houston',
+    'Midtown Houston',
+    'Galleria / Uptown',
+    'Heights',
+    'Montrose',
+    'Clear Lake',
 ];
 
 export default function ServiceAreasPage() {
     const apiKey = "AIzaSyBm0LkkTim0WuseYwItow8Cs71QC077VOc";
     
-    const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Fort+Worth,TX&center=32.7555,-97.3308&zoom=10`;
+    const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Houston,TX&center=29.7604,-95.3698&zoom=10`;
 
     return (
         <div className="flex flex-col bg-background">
             <section className="w-full py-12 md:py-20">
                 <div className="container mx-auto px-4 md:px-6 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary uppercase">
-                        SKILLED AND DEDICATED EXTERIOR REMODELERS IN TEXAS
+                        TRUSTED ROOFING SERVICES ACROSS HOUSTON & SOUTHEAST TEXAS
                     </h1>
                     <p className="max-w-4xl mx-auto text-muted-foreground md:text-lg mt-4">
-                        Get the quality service you deserve with assistance from our highly qualified team of local remodelers.
+                        Mend Roofing proudly serves homeowners and businesses throughout the Houston area with expert roof repair, replacement, and installation services. GAF Certified and fully insured.
                     </p>
                 </div>
             </section>

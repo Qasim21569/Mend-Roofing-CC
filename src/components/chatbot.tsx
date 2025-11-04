@@ -95,7 +95,7 @@ export function Chatbot() {
                       </AvatarFallback>
                     </Avatar>
                     <div>
-                      <h3 className="font-semibold">Good Guys Assistant</h3>
+                      <h3 className="font-semibold">Mend Roofing Assistant</h3>
                       <p className="text-xs text-primary-foreground/80">Online</p>
                     </div>
                   </div>

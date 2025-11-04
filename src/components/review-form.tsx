@@ -260,7 +260,7 @@ export function ReviewForm({ children }: { children: React.ReactNode }) {
               </div>
             </ScrollArea>
             <DialogFooter className="p-6 pt-4 border-t">
-              <Button type="submit" className="w-full bg-red-600 text-white hover:bg-red-700" size="lg" disabled={isSubmitting}>
+              <Button type="submit" className="w-full bg-primary text-white hover:bg-primary/90" size="lg" disabled={isSubmitting}>
               {isSubmitting ? (
                   <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />

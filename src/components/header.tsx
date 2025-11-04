@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   {
     href: "/roofing",
-    label: "Roofing",
+    label: "Residential Roofing",
     subLinks: [
         { href: "/roofing/replacement", label: "Roof Replacement" },
         { href: "/roofing/repair", label: "Roof Repair" },
@@ -26,9 +26,9 @@ const navLinks = [
     href: "/commercial-roofing",
     label: "Commercial Roofing",
     subLinks: [
-      { href: "/commercial-roofing/replacement", label: "Commercial Roof Replacement" },
-      { href: "/commercial-roofing/repair", label: "Commercial Roof Repair" },
-      { href: "/commercial-roofing/types", label: "Commercial Roof Types" },
+      { href: "/commercial-roofing/replacement", label: "Roof Replacement" },
+      { href: "/commercial-roofing/repair", label: "Roof Repair" },
+      { href: "/commercial-roofing/types", label: "Roof Types" },
     ]
   },
   {
@@ -41,59 +41,34 @@ const navLinks = [
     ]
   },
   {
-    href: "/gutters",
-    label: "Gutters",
-    subLinks: [
-      { href: "/gutters/seamless-gutters", label: "Seamless Gutters" },
-      { href: "/gutters/gutter-guards", label: "Gutter Guards" },
-    ]
-  },
-  {
-    href: "/siding",
-    label: "Siding",
-    subLinks: [
-      { href: "/siding/replacement", label: "Siding Replacement" },
-      { href: "/siding/repair", label: "Siding Repair" },
-      { href: "/siding/types", label: "Siding Types" },
-      { href: "/siding-replacement-cost", label: "Siding Replacement Costs" },
-    ]
-  },
-  {
-    href: "/painting",
-    label: "Painting",
-    subLinks: [
-      { href: "/painting/exterior-painting", label: "Exterior Painting" },
-      { href: "/painting/interior-painting", label: "Interior Painting" },
-    ]
-  },
-  {
     href: "/about",
     label: "About",
     subLinks: [
       { href: "/about/blog", label: "Blog" },
-      { href: "/about/offers", label: "Offers" },
-      { href: "/gallery", label: "Gallery" },
+      { href: "/about/faqs", label: "FAQs" },
       { href: "/about/reviews", label: "Reviews" },
-      { href: "/about/careers", label: "Careers" },
-      { href: "/contact", label: "Contact" },
+      { href: "/gallery", label: "Gallery" },
+      { href: "/about/past-projects", label: "Past Projects" },
       { href: "/about/warranty", label: "Warranty" },
       { href: "/about/financing", label: "Financing" },
       { href: "/service-areas", label: "Service Areas" },
-      { href: "/about/customer-service", label: "Customer Service" },
-      { href: "/about/faqs", label: "FAQs" },
-      { href: "/about/past-projects", label: "Past Projects" },
     ]
+  },
+  {
+    href: "/contact",
+    label: "Contact",
   },
 ];
 
-function GoodGuysLogo() {
+function MendRoofingLogo() {
   return (
     <Image 
-        src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS4.png?alt=media&token=bf7dfedc-1dd6-40ea-9b4e-89df016a0a81" 
-        alt="Good Guys Logo"
+        src="/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp" 
+        alt="Mend Roofing - Repair, Restore, Protect"
         width={200}
-        height={50}
-        className="h-auto"
+        height={60}
+        className="h-auto w-auto max-h-14"
+        priority
     />
   );
 }
@@ -115,7 +90,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full">
       <div className="bg-accent text-accent-foreground text-center p-2 text-sm">
-      Do you live in Texas? <Link href="/service-areas" className="underline font-semibold">See if we service your area here!</Link>
+      Serving Houston & Southeast Texas! <Link href="/service-areas" className="underline font-semibold">See if we service your area here!</Link>
       </div>
       <div
         className={cn(
@@ -125,7 +100,7 @@ export function Header() {
       >
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
-            <GoodGuysLogo />
+            <MendRoofingLogo />
           </Link>
           <nav className="hidden items-center gap-4 lg:flex flex-nowrap">
             {navLinks.map((link) => (
@@ -173,9 +148,9 @@ export function Header() {
             ))}
           </nav>
           <div className="hidden items-center gap-4 lg:flex">
-            <a href="tel:817-233-4524" className="flex items-center gap-2 text-primary-foreground font-semibold whitespace-nowrap">
+            <a href="tel:346-236-3652" className="flex items-center gap-2 text-primary-foreground font-semibold whitespace-nowrap">
               <Phone className="h-5 w-5" />
-              817-233-4524
+              (346) 236-3652
             </a>
             <Button asChild variant="default" className="bg-black text-white hover:bg-gray-800">
               <Link href="/contact">GET A FREE ESTIMATE</Link>
@@ -192,7 +167,7 @@ export function Header() {
                 <SheetHeader className="p-6 pb-0 flex-shrink-0">
                     <SheetTitle>
                       <Link href="/" prefetch={false} onClick={() => setMobileMenuOpen(false)}>
-                        <GoodGuysLogo />
+                        <MendRoofingLogo />
                       </Link>
                     </SheetTitle>
                 </SheetHeader>
@@ -253,9 +228,9 @@ export function Header() {
                     </div>
                 </div>
                 <div className="p-6 pt-0 flex-shrink-0">
-                    <a href="tel:817-233-4524" className="flex items-center gap-2 text-primary-foreground font-semibold text-lg mb-4">
+                    <a href="tel:346-236-3652" className="flex items-center gap-2 text-primary-foreground font-semibold text-lg mb-4">
                         <Phone className="h-5 w-5" />
-                        817-233-4524
+                        (346) 236-3652
                     </a>
                     <Button asChild size="lg" className="w-full bg-black text-white hover:bg-gray-800">
                       <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>GET A FREE ESTIMATE</Link>

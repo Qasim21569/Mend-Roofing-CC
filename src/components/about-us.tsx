@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
-const videoPlaceholder = "https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS4.png?alt=media&token=bf7dfedc-1dd6-40ea-9b4e-89df016a0a81";
+const videoPlaceholder = "/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp";
 
 export function AboutUs() {
     return (
@@ -14,7 +14,7 @@ export function AboutUs() {
                         <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg">
                             <Image 
                                 src={videoPlaceholder} 
-                                alt="Good Guys local contractor" 
+                                alt="Mend Roofing - Houston roofing contractor" 
                                 fill
                                 className="object-contain bg-black p-4"
                             />
@@ -23,10 +23,10 @@ export function AboutUs() {
                     <div>
                         <p className="content-heading uppercase text-destructive-foreground/80 mb-2">ABOUT US</p>
                         <h2 className="hero-heading text-white mb-4">
-                            LOCAL FORT WORTH ROOFERS
+                            LOCAL HOUSTON ROOFERS
                         </h2>
                         <p className="content-description text-destructive-foreground/80 mb-8">
-                            Since 2012, Good Guys has made it our mission to prepare properties against severe weather. We work closely with homeowners and business managers to build lasting results, with 15+ years of industry experience. Learn how we quell the storm as a top-rated company that's always prepared with expertise, efficiency, and care.
+                            Led by Zach Garza, Mend Roofing delivers dependable roof repair and replacement services in Southeast Texas, utilizing premium materials to safeguard homes against harsh weather conditions. With over 20 years of combined experience, we're a GAF Certified roofing company recognized for exceptional customer satisfaction. We pride ourselves on accountability, transparency, and alignment with our clients' needs.
                         </p>
                         <div className="flex gap-4">
                             <Button asChild className="bg-white text-black hover:bg-gray-200">

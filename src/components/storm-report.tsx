@@ -99,7 +99,7 @@ export function StormReport() {
                                 </FormControl>
                                 <div className="space-y-1 leading-none">
                                     <FormLabel className="text-xs font-normal text-muted-foreground">
-                                    By checking this box, I authorize Good Guys LLC to send me marketing calls and text messages at the number provided above, including by using an autodialer or a prerecorded message. I understand that I am not required to give this authorization as a condition of doing business with Good Guys LLC.
+                                    By checking this box, I authorize Mend Roofing LLC to send me marketing calls and text messages at the number provided above, including by using an autodialer or a prerecorded message. I understand that I am not required to give this authorization as a condition of doing business with Mend Roofing LLC.
                                     </FormLabel>
                                     <FormMessage />
                                 </div>

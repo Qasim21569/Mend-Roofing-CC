@@ -2,13 +2,13 @@
 import { GetStarted } from "@/components/get-started";
 import Image from "next/image";
 
-const logoUrl = "https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/GOODGUYS3.png?alt=media&token=1e778559-5ca2-4999-b705-015633edea42";
+const logoUrl = "/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp";
 
 const images = [
-    { src: logoUrl, alt: 'Good Guys Logo 1' },
-    { src: logoUrl, alt: 'Good Guys Logo 2' },
-    { src: logoUrl, alt: 'Good Guys Logo 3' },
-    { src: logoUrl, alt: 'Good Guys Logo 4' },
+    { src: logoUrl, alt: 'Mend Roofing - Repair, Restore, Protect' },
+    { src: logoUrl, alt: 'Mend Roofing Logo' },
+    { src: logoUrl, alt: 'Mend Roofing Houston' },
+    { src: logoUrl, alt: 'Mend Roofing Texas' },
 ];
 
 export default function AboutUsPage() {
@@ -17,10 +17,10 @@ export default function AboutUsPage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="hero-heading uppercase">
-                    LEARN ABOUT OUR TRUSTED FAMILY BUSINESS IN FORT WORTH
+                    LEARN ABOUT MEND ROOFING - YOUR TRUSTED HOUSTON ROOFING COMPANY
                 </h1>
                  <p className="hero-description max-w-4xl mx-auto mt-4">
-                    Our exterior remodeling company has been the go-to choice for property owners across the region for years.
+                    Led by Zach Garza with over 20 years of combined experience, we're a GAF Certified roofing company serving Houston and Southeast Texas.
                 </p>
             </div>
         </section>
@@ -57,7 +57,7 @@ export default function AboutUsPage() {
                                 ABOUT US
                             </h2>
                             <p className="content-description">
-                                At Good Guys, we're more than an exterior remodeling company; we're a family-owned and operated business with over 15 years of experience. We proudly serve Fort Worth and the surrounding areas with the highest quality products and services in the industry. Over the years, we've built a reputation for delivering high-quality craftsmanship, honest service, and reliable results for homeowners and businesses alike.
+                                At Mend Roofing, we're more than a roofing company; we're a locally-owned business led by Zach Garza with over 20 years of combined experience. We proudly serve Houston, Spring, Katy, The Woodlands, and surrounding areas with premium roofing materials and expert craftsmanship. As a GAF Certified roofing company, fully licensed and insured up to $2,000,000, we've built our reputation on accountability, transparency, and alignment with our clients' needs. Our commitment is to deliver long-lasting roofing solutions that protect your home against harsh Texas weather.
                             </p>
                         </div>
                     </div>
