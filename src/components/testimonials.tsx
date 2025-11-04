@@ -62,21 +62,24 @@ const StarRating = ({ rating }: { rating: number }) => {
 
 export function Testimonials() {
   return (
-    <section className="py-16 sm:py-24 bg-primary text-primary-foreground">
+    <section className="py-16 sm:py-24 bg-muted">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start mb-12">
-            <div className="max-w-xl">
-                <p className="content-heading uppercase tracking-widest text-primary-foreground/80 mb-2">TESTIMONIALS</p>
-                <h2 className="hero-heading text-primary-foreground mb-4">
-                    HEAR FROM LOCAL CUSTOMERS
-                </h2>
-                <p className="content-description text-primary-foreground/80">
-                    Learn why homeowners and businesses across the area turn to Mend Roofing for full-scale remodeling projects and attentive customer service.
-                </p>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>
+            What Our Customers Say
+          </h2>
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="flex items-center gap-1 text-yellow-400">
+              <Star fill="currentColor" className="w-6 h-6" />
+              <Star fill="currentColor" className="w-6 h-6" />
+              <Star fill="currentColor" className="w-6 h-6" />
+              <Star fill="currentColor" className="w-6 h-6" />
+              <Star fill="currentColor" className="w-6 h-6" />
             </div>
-            <Button asChild variant="outline" className="mt-6 md:mt-0 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary shrink-0">
-                <Link href="/about/reviews">READ ALL TESTIMONIALS</Link>
-            </Button>
+            <span className="text-2xl font-bold text-foreground">5.0</span>
+            <span className="text-sm text-muted-foreground">Top Rated Service</span>
+            <span className="text-xs text-muted-foreground">- Verified by Trustindex</span>
+          </div>
         </div>
         <Carousel
             opts={{
@@ -118,8 +121,8 @@ export function Testimonials() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="text-primary-foreground border-primary-foreground/50 hover:text-primary-foreground -left-12 bg-transparent hover:bg-transparent" />
-            <CarouselNext className="text-primary-foreground border-primary-foreground/50 hover:text-primary-foreground -right-12 bg-transparent hover:bg-transparent" />
+            <CarouselPrevious className="text-foreground border-border hover:text-primary -left-12 bg-background hover:bg-background" />
+            <CarouselNext className="text-foreground border-border hover:text-primary -right-12 bg-background hover:bg-background" />
           </Carousel>
       </div>
     </section>

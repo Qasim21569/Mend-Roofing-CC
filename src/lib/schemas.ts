@@ -4,7 +4,7 @@ export const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   phone: z.string().min(10, { message: "Please enter a valid phone number." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
-  service: z.string().min(1, { message: "Please select a service." }),
+  zipCode: z.string().optional(),
   message: z.string().optional(),
 });
 

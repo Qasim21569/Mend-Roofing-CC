@@ -16,6 +16,9 @@ const navLinks = [
     label: "Residential Roofing",
     subLinks: [
         { href: "/roofing/replacement", label: "Roof Replacement" },
+        { href: "/roofing/tile-roofing", label: "Tile Roofing" },
+        { href: "/roofing/gaf-roofing", label: "GAF Roofing" },
+        { href: "/roofing/asphalt-shingles", label: "Asphalt Shingles" },
         { href: "/roofing/repair", label: "Roof Repair" },
         { href: "/roofing/types", label: "Roof Types" },
         { href: "/roofing/metal-roof", label: "Metal Roof" },
@@ -44,6 +47,7 @@ const navLinks = [
     href: "/about",
     label: "About",
     subLinks: [
+      { href: "/about", label: "About Us" },
       { href: "/about/blog", label: "Blog" },
       { href: "/about/faqs", label: "FAQs" },
       { href: "/about/reviews", label: "Reviews" },

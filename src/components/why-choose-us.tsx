@@ -1,28 +1,28 @@
 
 import Image from "next/image";
-import { Award, DollarSign, Handshake, ShieldCheck } from "lucide-react";
+import { Wrench, Palette, MapPin, CreditCard } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 const features = [
     {
-      icon: <Handshake className="h-6 w-6" />,
-      title: "CUSTOMER-CENTRIC SERVICE",
-      description: "Our family-owned business puts your best interest at the top of everything we do, earning us a BBB accreditation and A+ rating.",
+      icon: <Wrench className="h-8 w-8" />,
+      title: "Expert Roofing Services",
+      description: "Our team brings precision and expertise to every roofing project. With years of combined experience, we ensure every installation, repair, and replacement is completed with meticulous attention to detail and industry best practices."
     },
     {
-      icon: <ShieldCheck className="h-6 w-6" />,
-      title: "STRESS-FREE ROOFING",
-      description: "We'll handle every step of your home remodel, from providing free same-day pricing to assisting with insurance claims.",
+      icon: <Palette className="h-8 w-8" />,
+      title: "Customized Roofing Solutions",
+      description: "We specialize in TPO roofing, slate roofs, and multi-family roofing services. Our customized approach ensures that each project is tailored to your specific needs, property type, and budget requirements."
     },
     {
-      icon: <DollarSign className="h-6 w-6" />,
-      title: "FLEXIBLE FINANCING PLANS",
-      description: "Make your emergency restoration or exterior update even easier by utilizing financing plans tailored to your budget.",
+      icon: <MapPin className="h-8 w-8" />,
+      title: "Local Expertise You Can Trust",
+      description: "As a locally owned and operated business, we understand the unique roofing challenges in Houston and Southeast Texas. Our deep knowledge of local weather patterns and building codes ensures your roof is built to last."
     },
     {
-      icon: <Award className="h-6 w-6" />,
-      title: "WARRANTY COVERAGE",
-      description: "We cover your roofing project with enhanced manufacturer warranties to build years of additional peace of mind.",
+      icon: <CreditCard className="h-8 w-8" />,
+      title: "Financing Made Easy",
+      description: "We believe quality roofing should be accessible. That's why we offer flexible financing options to make your roofing project affordable. Our team works with you to find a payment plan that fits your budget."
     },
 ];
 
@@ -31,53 +31,29 @@ const houseImage = "https://images.unsplash.com/photo-1605146769289-440113cc3d00
 
 export function WhyChooseUs() {
   return (
-    <section className="relative bg-background">
-      <div className="container mx-auto grid lg:grid-cols-2">
-        <div className="relative text-primary-foreground py-16 px-4 md:px-12">
-            <div 
-                className="absolute inset-0 bg-primary z-0"
-                style={{
-                    backgroundImage: `url(${backgroundImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundBlendMode: 'multiply',
-                }}
-            ></div>
-            <div className="relative z-10">
-                <h1 className="hero-heading uppercase text-white mb-2">WHY CHOOSE US</h1>
-                <h2 className="content-heading uppercase tracking-widest text-white mb-4">
-                    Protective Fort Worth Roofing Company
-                </h2>
-                <p className="content-description text-primary-foreground/80 mb-8 max-w-lg">
-                    At Mend Roofing Remodeling, we take pride in strengthening properties in our community against extreme weather conditions. We're here to make the roof replacement, storm damage restoration, and home exterior remodeling as easy as possible. Work with a highly trained team of local professionals that make us the "Best Roofer in Fort Worth".
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {features.map((feature, index) => (
-                        <Card key={index} className="bg-white text-foreground">
-                            <CardContent className="p-6">
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-destructive text-destructive-foreground rounded-full p-3">
-                                        {feature.icon}
-                                    </div>
-                                    <h3 className="text-sm font-bold uppercase" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>{feature.title}</h3>
-                                </div>
-                                <p className="text-xs text-muted-foreground mt-4">{feature.description}</p>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </div>
+    <section className="relative bg-background py-16 sm:py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>
+            Why Choose Mend Roofing?
+          </h2>
         </div>
-        <div className="relative min-h-[400px] lg:min-h-0">
-          <Image
-            src={houseImage}
-            alt="Beautiful modern home with a well-maintained roof"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1023px) 0, 50vw"
-            data-ai-hint="residential house"
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {features.map((feature, index) => (
+                <Card key={index} className="bg-card border-0 shadow-lg">
+                    <CardContent className="p-6">
+                        <div className="flex justify-center mb-4 text-primary">
+                            {feature.icon}
+                        </div>
+                        <h3 className="text-lg md:text-xl font-bold text-foreground mb-4 text-center" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>
+                            {feature.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm md:text-base text-center">
+                            {feature.description}
+                        </p>
+                    </CardContent>
+                </Card>
+            ))}
         </div>
       </div>
     </section>

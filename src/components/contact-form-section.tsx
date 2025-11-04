@@ -26,6 +26,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { submitContactForm } from "@/app/actions";
 import { contactFormSchema, type ContactFormValues } from "@/lib/schemas";
+import Link from "next/link";
 
 const services = [
   "Roof Installation",
@@ -70,25 +71,21 @@ export function ContactFormSection() {
   }
 
   return (
-    <section id="contact" className="bg-card py-16 sm:py-24">
+    <section id="contact" className="bg-muted py-16 sm:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              Get A Free Estimate
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Ready to start your next project? Fill out the form below and one of our experts will get in touch with you to provide a free, no-obligation estimate.
-            </p>
-            <div className="space-y-4 text-base">
-                <p><strong>Phone:</strong> 817-233-4524</p>
-                <p><strong>Email:</strong> [Your Email Address]</p>
-                <p><strong>Address:</strong> Fort Worth, Texas (Serving Tarrant, Johnson, and Parker counties)</p>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-card rounded-lg shadow-lg p-8 md:p-12">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" style={{ fontFamily: '"Stardos Stencil", system-ui' }}>
+                Get A Free Estimate
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Ready to start your next project? Fill out the form below and one of our experts will get in touch with you.
+              </p>
             </div>
-          </div>
-          <div>
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <div>
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <FormField
                     control={form.control}
@@ -157,10 +154,10 @@ export function ContactFormSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Your Message (optional)</FormLabel>
+                      <FormLabel>How can we help? (optional)</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Tell us a little bit about your project"
+                          placeholder="Tell us about your project"
                           className="resize-none"
                           {...field}
                         />
@@ -169,7 +166,23 @@ export function ContactFormSection() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90" size="lg" disabled={isSubmitting}>
+                
+                <div className="text-xs text-muted-foreground space-y-2 p-4 bg-muted rounded-md">
+                  <p>
+                    <strong>Consent & TCPA Compliance:</strong> By submitting this form, you consent to receive marketing calls and text messages from Mend Roofing at the number provided above, even if you are on a Do Not Call List. You authorize us to contact you using automated dialing systems, prerecorded messages, and/or text messages for marketing and service-related purposes.
+                  </p>
+                  <p>
+                    <strong>SMS Messaging:</strong> By providing your phone number, you consent to receive SMS text messages from Mend Roofing. Message and data rates may apply. You understand that consent is not a condition of purchase or service.
+                  </p>
+                  <p>
+                    <strong>Opt-Out Options:</strong> You can opt-out of receiving calls or text messages at any time by replying <strong>STOP</strong> to any text message or <strong>HELP</strong> for more information. You may also opt-out by contacting us directly at (346) 236-3652. Message and data rates may apply based on your carrier plan.
+                  </p>
+                  <p>
+                    You are not required to give this consent as a condition of doing business with Mend Roofing. View our <Link href="#" className="underline text-primary hover:text-primary/80">Privacy Policy</Link> and <Link href="#" className="underline text-primary hover:text-primary/80">Terms & Conditions</Link> for more information.
+                  </p>
+                </div>
+
+                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white" size="lg" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -179,8 +192,9 @@ export function ContactFormSection() {
                     "Submit Request"
                   )}
                 </Button>
-              </form>
-            </Form>
+                </form>
+              </Form>
+            </div>
           </div>
         </div>
       </div>
