@@ -64,15 +64,21 @@ const navLinks = [
   },
 ];
 
-function MendRoofingLogo() {
+function MendRoofingLogo({ isScrolled }: { isScrolled: boolean }) {
   return (
-    <div className="relative -my-6 ml-8 md:ml-16 lg:ml-20">
+    <div className={cn(
+      "relative ml-0 md:ml-8 lg:ml-12 transition-all duration-300",
+      isScrolled ? "-my-2" : "-my-6"
+    )}>
       <Image 
           src="/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp" 
           alt="Mend Roofing - Repair, Restore, Protect"
           width={280}
           height={120}
-          className="h-auto w-auto max-h-28 md:max-h-32 lg:max-h-36"
+          className={cn(
+            "h-auto w-auto transition-all duration-300",
+            isScrolled ? "max-h-14 md:max-h-20" : "max-h-20 md:max-h-28 lg:max-h-32"
+          )}
           priority
       />
     </div>
@@ -106,7 +112,7 @@ export function Header() {
       >
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
-            <MendRoofingLogo />
+            <MendRoofingLogo isScrolled={isScrolled} />
           </Link>
           <nav className="hidden items-center gap-4 lg:flex flex-nowrap">
             {navLinks.map((link) => (
