@@ -94,7 +94,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full">
       <div className="bg-accent text-accent-foreground text-center p-2 text-sm">
-      Serving Houston & Southeast Texas! <Link href="/service-areas" className="underline font-semibold">See if we service your area here!</Link>
+      Serving Houston & Austin! <Link href="/service-areas" className="underline font-semibold">See if we service your area here!</Link>
       </div>
       <div
         className={cn(

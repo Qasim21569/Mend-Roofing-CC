@@ -14,11 +14,6 @@ export function Hero() {
         />
       </div>
 
-      {/* Decorative Shapes - Reduced on mobile */}
-      <div className="hidden md:block absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-      <div className="hidden md:block absolute -bottom-20 -left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-      <div className="hidden lg:block absolute top-1/2 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-
       <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-16">
           {/* Left Side - Content */}
@@ -78,22 +73,17 @@ export function Hero() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="relative order-2 lg:order-2 lg:scale-105">
-            <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl ring-2 sm:ring-4 ring-primary/10 hover:ring-primary/20 transition-all duration-300 group">
+          <div className="relative order-2 lg:order-2">
+            <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
               <Image
                 src="/home-hero-image.png"
                 alt="Mend Roofing professional service - Houston roofing company"
                 width={800}
                 height={600}
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-auto object-cover"
                 priority
               />
             </div>
-            
-            {/* Decorative elements - Hidden on small screens */}
-            <div className="hidden md:block absolute -bottom-8 -right-8 w-40 h-40 bg-primary/10 rounded-full blur-2xl -z-10" />
-            <div className="hidden md:block absolute -top-8 -left-8 w-48 h-48 bg-accent/30 rounded-full blur-3xl -z-10" />
-            <div className="hidden lg:block absolute top-1/2 -right-4 w-32 h-32 border-4 border-primary/20 rounded-full -z-10" />
           </div>
         </div>
       </div>
