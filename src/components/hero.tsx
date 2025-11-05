@@ -44,7 +44,7 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-16">
           {/* Left Side - Content */}
-          <div className="space-y-4 sm:space-y-5 lg:space-y-6 order-2 lg:order-1">
+          <div className="space-y-4 sm:space-y-5 lg:space-y-6 order-1 lg:order-1">
             <h1 className="hero-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-secondary leading-tight mb-2">
               Trusted Roofing Company for Roof Replacements, Repairs & New Installations
             </h1>
@@ -102,7 +102,7 @@ export function Hero() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="relative order-1 lg:order-2 lg:scale-105">
+          <div className="relative order-2 lg:order-2 lg:scale-105">
             <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl ring-2 sm:ring-4 ring-primary/10 hover:ring-primary/20 transition-all duration-300 group">
               <Image
                 src="/home-hero-image.png"
