@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full overflow-hidden py-8 sm:py-12 md:py-16 lg:py-24 bg-gradient-to-br from-white via-[#F8F9FA] to-accent/10">
+    <section id="home" className="relative w-full overflow-hidden pt-4 pb-8 sm:pt-6 sm:pb-12 md:pt-8 md:pb-16 lg:pt-12 lg:pb-24 bg-gradient-to-br from-white via-[#F8F9FA] to-accent/10">
       {/* Background Pattern - Hidden on mobile for performance */}
       <div className="hidden md:block absolute inset-0 opacity-[0.03]">
         <div className="absolute top-0 left-0 w-full h-full" 
@@ -69,7 +69,7 @@ export function Hero() {
             {/* Primary CTA */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
               <button className="bg-primary hover:bg-primary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 rounded-lg shadow-lg hover:shadow-xl transition-all w-full sm:w-auto font-semibold">
-                <a href="tel:3462363652">📞 Call: (346) 236-3652</a>
+                <a href="tel:3462363652"> Call: (346) 236-3652</a>
               </button>
               <button className="bg-secondary hover:bg-secondary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 rounded-lg shadow-lg hover:shadow-xl transition-all w-full sm:w-auto font-semibold">
                 <a href="#contact">Get Free Estimate</a>
