@@ -1,28 +1,6 @@
 "use client";
 
-import { ShieldCheck, DollarSign, Award, Home } from 'lucide-react';
 import Image from 'next/image';
-import { Button } from './ui/button';
-import Link from 'next/link';
-
-const trustBadges = [
-  {
-    icon: <ShieldCheck className="h-6 w-6" />,
-    text: "Fully Licensed, Insured & Certified Roofing Company"
-  },
-  {
-    icon: <DollarSign className="h-6 w-6" />,
-    text: "Affordable Payment Options Available"
-  },
-  {
-    icon: <Award className="h-6 w-6" />,
-    text: "Peace of Mind: Workmanship Warranties"
-  },
-  {
-    icon: <Home className="h-6 w-6" />,
-    text: "Locally Owned Small Business"
-  },
-];
 
 export function Hero() {
   return (
@@ -44,59 +22,46 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-16">
           {/* Left Side - Content */}
-          <div className="space-y-4 sm:space-y-5 lg:space-y-6 order-1 lg:order-1">
-            <h1 className="hero-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-secondary leading-tight mb-2">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8 order-1 lg:order-1">
+            <h1 className="hero-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-secondary leading-tight uppercase">
               Trusted Roofing Company for Roof Replacements, Repairs & New Installations
             </h1>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-primary font-bold">
-              Affordable & Reliable Roofing Services in Houston, TX
-            </p>
-            
-            {/* Trust Badges Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 py-3 sm:py-4 bg-white/50 backdrop-blur-sm rounded-xl p-4 sm:p-5 md:p-6 border border-accent/20">
-              {trustBadges.map((badge, index) => (
-                <div key={index} className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-primary shrink-0 mt-0.5 sm:mt-1 bg-primary/10 p-1.5 sm:p-2 rounded-lg">
-                    <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6">
-                      {badge.icon}
-                    </div>
-                  </div>
-                  <p className="text-secondary text-xs sm:text-sm md:text-base font-medium leading-snug">{badge.text}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Body Copy */}
-            <p className="text-secondary/70 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-secondary/70 leading-relaxed max-w-2xl">
               We provide expert roofing services for residential and commercial properties throughout Houston and Southeast Texas. From storm damage repairs to complete roof replacements, our certified team delivers quality craftsmanship you can trust.
             </p>
 
-            {/* Primary CTA */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto">
-                <Link href="tel:3462363652">
-                  📞 Call: (346) 236-3652
-                </Link>
-              </Button>
-              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto">
-                <Link href="#contact">Get Free Estimate</Link>
-              </Button>
-            </div>
-
-            {/* Trust Line - Stacked on mobile */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pt-3 sm:pt-4 text-xs sm:text-sm text-secondary/60">
-              <div className="flex items-center gap-2">
-                <Award className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0" />
-                <span className="font-semibold">GAF Certified</span>
+            {/* Certification Badges */}
+            <div className="flex items-center gap-4 sm:gap-6 flex-wrap pt-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge1.png?alt=media&token=your-token"
+                  alt="Owens Corning Preferred Contractor"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
               </div>
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0" />
-                <span className="font-semibold">$2M Insured</span>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge2.png?alt=media&token=your-token"
+                  alt="CertainTeed SELECT ShingleMaster"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-base sm:text-lg">⭐⭐⭐⭐⭐</span>
-                <span className="font-semibold">100+ Reviews</span>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge3.png?alt=media&token=your-token"
+                  alt="BBB Accredited Business"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 relative bg-[#C8102E] flex items-center justify-center p-2">
+                <span className="text-white font-bold text-2xl sm:text-3xl">GAF</span>
               </div>
             </div>
           </div>
