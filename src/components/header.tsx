@@ -66,14 +66,16 @@ const navLinks = [
 
 function MendRoofingLogo() {
   return (
-    <Image 
-        src="/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp" 
-        alt="Mend Roofing - Repair, Restore, Protect"
-        width={200}
-        height={60}
-        className="h-auto w-auto max-h-14"
-        priority
-    />
+    <div className="relative -my-6 ml-8 md:ml-16 lg:ml-20">
+      <Image 
+          src="/Mend Logo/Mend-Roofing-Logo-white-border-10px.webp" 
+          alt="Mend Roofing - Repair, Restore, Protect"
+          width={280}
+          height={120}
+          className="h-auto w-auto max-h-28 md:max-h-32 lg:max-h-36"
+          priority
+      />
+    </div>
   );
 }
 
