@@ -14,7 +14,7 @@ export default function MetalRoofPage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="hero-heading uppercase">
-                    PREMIUM METAL ROOFING IN FORT WORTH
+                    PREMIUM METAL ROOFING IN Houston, TX
                 </h1>
                  <p className="hero-description max-w-4xl mx-auto mt-4">
                     Defend your home with a long-lasting roof installation engineered by prioritizing energy efficiency and all-around resistance.
@@ -57,10 +57,10 @@ export default function MetalRoofPage() {
                                 METAL ROOFS
                             </h2>
                             <p className="content-description">
-                                Are you looking for long-lasting roof protection? At US Roofing, we install durable solutions that keep your home covered with resilience year after year. As a family-owned FORT WORTH roofing company, we specialize in dependable residential metal roofing that combines endurance with curb appeal. Our metal roofers bring 15+ years of experience to your home to make sure every installation is handled with precision.
+                                Are you looking for long-lasting roof protection? At US Roofing, we install durable solutions that keep your home covered with resilience year after year. As a family-owned Houston, TX roofing company, we specialize in dependable residential metal roofing that combines endurance with curb appeal. Our metal roofers bring 15+ years of experience to your home to make sure every installation is handled with precision.
                             </p>
                             <h3 className="content-heading uppercase pt-4">
-                                COMPLETE FORT WORTH ROOF METAL ROOF INSTALLATION SERVICES
+                                COMPLETE Houston, TX ROOF METAL ROOF INSTALLATION SERVICES
                             </h3>
                              <p className="content-description">
                                 A metal roof installation is an investment in the long-term protection of your home. At Good Guys, we offer a variety of metal roofing options, including standing seam and exposed fastener systems, to provide superior durability, energy efficiency, and weather resistance. Our expert team ensures a flawless installation, giving you a beautiful and long-lasting roof that can withstand the harsh Texas climate for decades.

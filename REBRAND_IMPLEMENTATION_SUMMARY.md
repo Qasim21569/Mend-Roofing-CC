@@ -57,7 +57,7 @@
   - Description: Emphasizes 20+ years experience
 
 ### ✅ 6. Service Areas Updates
-- **Changed from Fort Worth to Houston**
+- **Changed from Houston, TX to Houston**
   - Updated map location (Houston coordinates: 29.7604, -95.3698)
   - Updated in `src/components/service-areas.tsx`
   - Updated in `src/app/service-areas/page.tsx`
@@ -80,7 +80,7 @@
 
 - **About Page** (`src/app/about/page.tsx`)
   - Updated header: "Learn About Mend Roofing"
-  - Changed "Fort Worth" to "Houston"
+  - Changed "Houston, TX" to "Houston"
   - Updated company description
   - Emphasized GAF certification and insurance
 
@@ -92,7 +92,7 @@
 
 ### ✅ 8. Regional Rebranding
 **Changed Throughout:**
-- "Fort Worth" → "Houston"
+- "Houston, TX" → "Houston"
 - "Tarrant, Johnson, and Parker counties" → "Houston & Southeast Texas"
 - "Good Guys" → "Mend Roofing"
 - Service focus from "exterior remodeling" to "roofing services"
@@ -233,7 +233,7 @@
 - [x] Links working correctly
 
 **Content:**
-- [x] Fort Worth → Houston
+- [x] Houston, TX → Houston
 - [x] Good Guys → Mend Roofing
 - [x] Company info updated (Zach Garza, GAF, 20 years)
 - [x] Service descriptions updated

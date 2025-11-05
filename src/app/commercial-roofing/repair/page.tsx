@@ -14,7 +14,7 @@ export default function CommercialRoofRepairPage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary uppercase">
-                    COMMERCIAL ROOF REPAIRS IN FORT WORTH
+                    COMMERCIAL ROOF REPAIRS IN Houston, TX
                 </h1>
                  <p className="max-w-4xl mx-auto text-muted-foreground md:text-lg mt-4">
                     We respond quickly to your call to provide professional inspections, cost estimates, and insurance claims assistance.
@@ -56,7 +56,7 @@ export default function CommercialRoofRepairPage() {
                                 COMMERCIAL ROOF REPAIR
                             </h2>
                             <p className="text-muted-foreground text-base">
-                                Don't let commercial roof repairs stop you from running an efficient business. At Good Guys, we offer complete roof repair services that don't interrupt operations so you can focus on what matters most. Our Fort Worth commercial roofing company has 15+ years of combined experience, making us a leader in precise solutions. Learn how we quell the storm with high-quality materials backed by strong manufacturer warranties.
+                                Don't let commercial roof repairs stop you from running an efficient business. At Good Guys, we offer complete roof repair services that don't interrupt operations so you can focus on what matters most. Our Houston, TX commercial roofing company has 15+ years of combined experience, making us a leader in precise solutions. Learn how we quell the storm with high-quality materials backed by strong manufacturer warranties.
                             </p>
                         </div>
                     </div>

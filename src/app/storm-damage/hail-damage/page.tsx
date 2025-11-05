@@ -14,7 +14,7 @@ export default function HailDamagePage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="hero-heading uppercase">
-                    HAIL DAMAGE ROOF REPAIRS IN FORT WORTH
+                    HAIL DAMAGE ROOF REPAIRS IN Houston, TX
                 </h1>
                  <p className="hero-description max-w-4xl mx-auto mt-4">
                     We restore all types of impact-related damage with weather-resistant materials from industry-leading brands.
@@ -54,10 +54,10 @@ export default function HailDamagePage() {
                                 Hail Damage Roof and Siding Restoration
                             </h2>
                             <p className="content-description">
-                                Many hailstorms occur without warning, but still leave behind a destructive path. From cracking your asphalt shingles to tearing roof membranes, the impact of roof hail damage can compromise the structural integrity of your building. As a full-service Fort Worth roofing company, Good Guys Roofing is prepared to restore all signs of roof hail damage.
+                                Many hailstorms occur without warning, but still leave behind a destructive path. From cracking your asphalt shingles to tearing roof membranes, the impact of roof hail damage can compromise the structural integrity of your building. As a full-service Houston, TX roofing company, Good Guys Roofing is prepared to restore all signs of roof hail damage.
                             </p>
                             <p className="content-description">
-                                Since 2012, Good Guys Roofing has been trusted by homeowners and businesses to restore damage swiftly. We’ll guide you through the Fort Worth hail damage roof repair process so that you always have access to a professional. This is our way of making sure our community recovers fully with minimal stress.
+                                Since 2012, Good Guys Roofing has been trusted by homeowners and businesses to restore damage swiftly. We’ll guide you through the Houston, TX hail damage roof repair process so that you always have access to a professional. This is our way of making sure our community recovers fully with minimal stress.
                             </p>
                         </div>
                     </div>

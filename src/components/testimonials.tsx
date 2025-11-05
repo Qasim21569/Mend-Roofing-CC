@@ -18,7 +18,7 @@ import Link from "next/link";
 const testimonials = [
   {
     name: "Michael R.",
-    location: "Fort Worth (Tarrant)",
+    location: "Houston, TX (Tarrant)",
     avatarId: "testimonial-avatar1",
     quote: "Mend Roofing replaced our roof after the last hail storm. The entire process was seamless, from the initial inspection to dealing with our insurance. The crew was professional, fast, and left our property spotless. Highly recommend!",
     rating: 5,

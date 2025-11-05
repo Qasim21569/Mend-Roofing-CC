@@ -14,7 +14,7 @@ export default function CommercialRoofTypesPage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary uppercase">
-                    COMMERCIAL ROOF TYPES IN FORT WORTH
+                    COMMERCIAL ROOF TYPES IN Houston, TX
                 </h1>
                  <p className="max-w-4xl mx-auto text-muted-foreground md:text-lg mt-4">
                     We specialize in resilient roof materials that help protect the integrity and storm defense of your property.
@@ -56,7 +56,7 @@ export default function CommercialRoofTypesPage() {
                                 COMMERCIAL ROOF TYPES
                             </h2>
                             <p className="text-muted-foreground text-base">
-                                Choosing the right roofing material is crucial for the longevity and performance of your commercial property. At Good Guys, we offer a wide range of commercial roofing systems to meet the diverse needs of Fort Worth businesses. Our experienced team will help you select the best option based on your building's structure, budget, and local climate challenges. From durable metal roofing to energy-efficient TPO and PVC systems, we provide expert installation and high-quality materials to ensure your investment is protected for years to come.
+                                Choosing the right roofing material is crucial for the longevity and performance of your commercial property. At Good Guys, we offer a wide range of commercial roofing systems to meet the diverse needs of Houston, TX businesses. Our experienced team will help you select the best option based on your building's structure, budget, and local climate challenges. From durable metal roofing to energy-efficient TPO and PVC systems, we provide expert installation and high-quality materials to ensure your investment is protected for years to come.
                             </p>
                         </div>
                     </div>

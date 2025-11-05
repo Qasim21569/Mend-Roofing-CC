@@ -7,11 +7,12 @@ import { WhyChooseUs } from '@/components/why-choose-us';
 import { Gallery } from '@/components/gallery';
 import { Testimonials } from '@/components/testimonials';
 import { Offers } from '@/components/offers';
-import { ServiceAreas } from '@/components/service-areas';
+// import { ServiceAreasCarousel } from '@/components/service-areas';
 import { OurProcess } from '@/components/our-process';
 import { AboutUs } from '@/components/about-us';
 import { Blog } from '@/components/blog';
 import { CommunityInvolvement } from '@/components/community-involvement';
+import ServiceAreasCarousel from '@/components/service-areas';
 
 export const metadata: Metadata = {
   title: "Mend Roofing | Expert Roofing Services in Houston, TX",
@@ -29,7 +30,7 @@ export default function Home() {
       <Offers />
       <WhyChooseUs />
       <Gallery />
-      <ServiceAreas />
+      <ServiceAreasCarousel />
       <OurProcess />
       <AboutUs />
       <Blog />

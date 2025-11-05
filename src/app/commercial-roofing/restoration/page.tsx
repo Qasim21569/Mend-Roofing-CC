@@ -3,7 +3,7 @@
 
 import { GetStarted } from "@/components/get-started";
 import Image from "next/image";
-import { CheckCircle2, Shield, DollarSign, Clock, Home, Phone, AlertTriangle, CheckCircle, FileCheck, Award, Building2, MapPin, Star, Wind, TrendingUp, CalendarDays, Wrench, Droplets, Zap, CreditCard } from "lucide-react";
+import { CheckCircle2, Shield, DollarSign, Clock, Home, Phone, AlertTriangle, CheckCircle, FileCheck, Award, Building2, MapPin, Star, Wind, TrendingUp, CalendarDays, Sparkles, Droplets, Sun, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
@@ -14,58 +14,80 @@ import {
 } from "@/components/ui/accordion";
 
 const images = [
-    { src: 'https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/thumbs/80ebba77-6367-4afe-8df8-90a75d2cb736.jpg', alt: 'Roof repair inspection', dataAiHint: 'roof inspection' },
-    { src: 'https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/thumbs/f25e3424-7af9-417a-ad7f-3bd870d09883.jpg', alt: 'Roof repair materials', dataAiHint: 'roofing tools' },
-    { src: 'https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/thumbs/0369a1d0-56e4-4b97-9b0a-5d2cb0c7cc43.jpg', alt: 'Damaged roof section', dataAiHint: 'damaged roof' },
+    { src: 'https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/original/f8b1adf1-9c4a-433a-bc38-df2ab404bf3a.jpg', alt: 'Roof restoration in progress', dataAiHint: 'roof restoration work' },
+    { src: 'https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/original/df3180c9-46cd-4079-a576-999c381033bc.jpg', alt: 'Roof cleaning and restoration', dataAiHint: 'roof cleaning' },
+    { src: 'https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/original/8a216c8a-4dcb-4c2f-afb7-8fcc472adb61.jpg', alt: 'Restored commercial roof', dataAiHint: 'restored roof' },
 ];
 
-const trustBadges = [
-    { name: "RCAT", description: "Roofing Contractors Association of Texas" },
-    { name: "Directorii.com", description: "Verified Professional Directory" },
-    { name: "Conklin", description: "Certified Installer" },
-    { name: "GAF Certified Residential Roofing Contractor", description: "Master Elite Certification" },
-];
-
-const whyMendRoofing = [
+const benefits = [
     {
-        title: "Top of the Line Professionals",
-        description: "Experienced team with industry expertise"
+        title: "Cost-Effective Solution",
+        description: "A smart alternative to full replacement, our roof restoration services offer affordable upgrades without sacrificing quality.",
+        icon: DollarSign
     },
     {
-        title: "Industry-Leading Warranties",
-        description: "Comprehensive protection for your investment"
+        title: "Improved Energy Efficiency",
+        description: "Our protective roof coatings and reflective roof coatings help reduce heat absorption, improving indoor comfort and lowering energy costs.",
+        icon: TrendingUp
     },
     {
-        title: "A Local Katy Roofing Company You Can Trust",
-        description: "Serving the community with integrity"
+        title: "Enhanced Curb Appeal",
+        description: "Whether you're refreshing shingles, tiles, or metal panels, aesthetic roof upgrades give your property a clean, modern look.",
+        icon: Sparkles
+    },
+    {
+        title: "Increased Durability",
+        description: "Repairs and roof waterproofing strengthen your system for long-lasting, durable roofing solutions.",
+        icon: Shield
+    },
+    {
+        title: "Leak Prevention",
+        description: "Targeted repair and roof sealing address weak points to eliminate water entry and future damage.",
+        icon: Droplets
     }
 ];
 
-const inspectionBenefits = [
-    "Early detection of leaks, cracks, and structural issues",
-    "Preventative maintenance to extend your roof's life",
-    "Planning ahead for roof replacement before major failures occur"
-];
-
-const leakRepairServices = [
-    "Shingle roof repair for cracked, missing, or curled shingles",
-    "Flashing repairs to seal chimneys, vents, and skylights",
-    "Flat roof leak repairs for pooling water and membrane damage",
-    "Shake roof repair for weathered, chipped, or cracked cedar shakes",
-    "Attic leak inspection to detect hidden moisture or mold"
-];
-
-const insuranceHelp = [
-    "Thorough roof inspections to document storm damage",
-    "Complete paperwork assistance for insurance claim",
-    "Direct communication with your provider",
-    "Quality storm restoration using high-grade materials"
-];
-
-const financingBenefits = [
-    "Finance from $1,000 to $100,000",
-    "Get pre-qualified in 90 seconds",
-    "No impact on credit score"
+const services = [
+    {
+        name: "Roof Inspection & Assessment",
+        description: "We perform detailed evaluations to detect structural issues and recommend effective repairs.",
+        icon: FileCheck
+    },
+    {
+        name: "Roof Cleaning & Debris Removal",
+        description: "Our team removes dirt, algae, moss, and provides debris removal from roof surfaces to restore their original appearance.",
+        icon: Wrench
+    },
+    {
+        name: "Roof Repairs",
+        description: "From shingle repair to structural fixes, we restore your roof's strength and integrity.",
+        icon: Home
+    },
+    {
+        name: "Sealing & Waterproofing",
+        description: "We apply high-performance roof waterproofing systems and sealants to protect against rain, leaks, and moisture.",
+        icon: Shield
+    },
+    {
+        name: "Repainting & Recoating",
+        description: "Our finishing process includes roof repainting and roof recoating using UV-resistant, weatherproof coatings.",
+        icon: Sparkles
+    },
+    {
+        name: "Tile Roof Restoration",
+        description: "Professional restoration for tile roofing systems to extend lifespan and enhance appearance.",
+        icon: Award
+    },
+    {
+        name: "Metal Roof Restoration",
+        description: "Expert restoration services for metal roofing to maintain durability and performance.",
+        icon: Building2
+    },
+    {
+        name: "Shingle Repair",
+        description: "Comprehensive shingle repair services to address damage and restore protection.",
+        icon: Home
+    }
 ];
 
 const serviceAreas = [
@@ -91,23 +113,11 @@ const serviceAreas = [
 const faqs = [
     {
         question: "Are you licensed and insured?",
-        answer: "Yes, licensed and insured up to $2,000,000, policies with Directorii and Google Guarantee."
-    },
-    {
-        question: "Does insurance cover my roof replacement?",
-        answer: "Insurance coverage for roof replacement depends on the cause of damage and your specific policy. We can help assess damage and work with your insurance company to determine coverage. Storm damage, hail, and wind damage are typically covered, while normal wear and tear may not be."
-    },
-    {
-        question: "Can I finance my roof replacement?",
-        answer: "Yes, we offer flexible financing options through Momnt and Wisetack. Finance from $1,000 to $100,000, get pre-qualified in 90 seconds, with no impact on your credit score."
-    },
-    {
-        question: "How can I get a roofing estimate?",
-        answer: "You can call (346) 236-3652 or fill out the online contact form to request a free roofing estimate. Our team will assess your roof and provide a detailed quote."
+        answer: "Yes, we carry all state-required licensing and are fully insured up to $2,000,000. We also have third-party policies with Directorii and Google Guarantee for extra peace of mind for our customers."
     }
 ];
 
-export default function RoofRepairPage() {
+export default function RoofRestorationPage() {
     return (
       <div className="flex flex-col bg-background">
         {/* Hero Section */}
@@ -115,10 +125,13 @@ export default function RoofRepairPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto text-center">
                     <h1 className="hero-heading uppercase">
-                        Roof Repair Services in Houston, TX
+                        ROOF RESTORATION SERVICES IN HOUSTON, TX
                     </h1>
                     <p className="hero-description max-w-4xl mx-auto mt-4">
-                        Your home is one of your most valuable investments and protecting it starts at the top. At Mend Roofing, we deliver expert residential roofing services with precision, care, and reliability. Whether it's a minor roof leak, major storm damage, or roof installation in Spring, we provide top-tier roof repair solutions across Houston, Katy, Cypress, Spring, Tomball, and The Woodlands.
+                        At Mend Roofing, we provide expert roof restoration services designed to extend roof lifespan, enhance durability, and improve overall roof aesthetics. Whether your roof has aged over time or suffered storm related damage, our team delivers professional roof restoration tailored to your home or business.
+                    </p>
+                    <p className="hero-description max-w-4xl mx-auto mt-4">
+                        We proudly serve as a roofing contractor in Katy and a trusted roofing company across Houston, Spring, Cypress, Tomball, and The Woodlands. If you're looking for roof installation near me or a dependable roofing contractor Spring, Mend Roofing offers the experience and service you can trust.
                     </p>
                     <div className="grid md:grid-cols-3 gap-4 mt-8 max-w-3xl mx-auto">
                         <div className="bg-card p-4 rounded-lg shadow-md text-center">
@@ -156,13 +169,13 @@ export default function RoofRepairPage() {
                     <div className="space-y-6">
                         <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
                             <Image
-                                src="https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/medium/fb1989f6-2cdd-48ea-96de-fa90d1ec2fe1.jpg"
-                                alt="Roof Repair Services in Houston, TX"
+                                src="https://cmsplatform.blob.core.windows.net/wwwusroofingus/gallery/original/83910682-4fce-48ad-8354-961d59094c90.jpg"
+                                alt="Roof Restoration in Houston, TX"
                                 fill
                                 priority
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                data-ai-hint="roof repair work"
+                                data-ai-hint="roof restoration"
                             />
                         </div>
                         <div className="grid grid-cols-3 gap-4">
@@ -182,32 +195,78 @@ export default function RoofRepairPage() {
                     </div>
 
                     <div className="sticky top-24">
-                       <GetStarted subtitle="Don't wait for a small leak to become a big problem. Get your free repair estimate today!" />
+                       <GetStarted subtitle="Transform your roof with professional restoration services. Get your free estimate today!" />
                     </div>
                 </div>
             </div>
         </section>
 
-        {/* Inspections Section */}
+        {/* What is Roof Restoration Section */}
         <section className="w-full py-16 md:py-24 bg-muted/50">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto space-y-8">
-                    <div className="flex items-center gap-4 mb-6 justify-center">
-                        <FileCheck className="h-8 w-8 text-primary" />
-                        <h2 className="content-heading uppercase text-2xl">
-                            Inspections
-                        </h2>
-                    </div>
+                    <h2 className="content-heading uppercase text-center text-2xl">
+                        What is Roof Restoration?
+                    </h2>
                     <p className="content-description text-center">
-                        Our free roof inspections help identify potential problems early, saving you from costly repairs later. Whether it's missing shingles, small leaks, or worn flashing, we inspect every element inside and out.
+                        Roof restoration is a comprehensive process that includes roof inspection and assessment, cleaning, repairs, roof sealing, and finishing with roof repainting or roof recoating. It's a cost-effective roof restoration option that helps prevent further damage, boosts curb appeal, and improves energy-efficient roofing performance through the application of reflective roof coatings and UV resistant roof coatings.
                     </p>
-                    <div className="grid md:grid-cols-1 gap-4 mt-6">
-                        {inspectionBenefits.map((benefit, index) => (
-                            <div key={index} className="flex items-start gap-3 bg-card p-4 rounded-lg shadow-sm">
-                                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                                <span className="content-description">{benefit}</span>
-                            </div>
-                        ))}
+                    <p className="content-description text-center">
+                        Homeowners considering roof installation Spring or exploring alternatives to a full replacement can benefit from this smart approach.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        {/* Benefits of Roof Restoration Section */}
+        <section className="w-full py-16 md:py-24">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="max-w-4xl mx-auto space-y-8">
+                    <h2 className="content-heading uppercase text-center text-2xl">
+                        Benefits of Roof Restoration
+                    </h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {benefits.map((benefit, index) => {
+                            const IconComponent = benefit.icon;
+                            return (
+                                <div key={index} className="bg-card p-6 rounded-lg shadow-md">
+                                    <IconComponent className="h-10 w-10 text-primary mb-4" />
+                                    <h3 className="content-heading uppercase mb-3">{benefit.title}</h3>
+                                    <p className="content-description text-sm">{benefit.description}</p>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div className="bg-card p-6 rounded-lg shadow-md mt-8">
+                        <p className="content-description">
+                            If you're unsure whether you need a restoration or a full roofing installation in Spring, our inspection services can guide you toward the right solution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* Comprehensive Roof Restoration Services Section */}
+        <section className="w-full py-16 md:py-24 bg-muted/50">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="max-w-4xl mx-auto space-y-8">
+                    <h2 className="content-heading uppercase text-center text-2xl">
+                        Comprehensive Roof Restoration Services
+                    </h2>
+                    <p className="content-description text-center">
+                        We offer full service residential roof restoration and commercial roof restoration for all roofing systems, including tile roof restoration, metal roof restoration, and shingle repair:
+                    </p>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                        {services.map((service, index) => {
+                            const IconComponent = service.icon;
+                            return (
+                                <div key={index} className="bg-card p-6 rounded-lg shadow-md">
+                                    <IconComponent className="h-10 w-10 text-primary mb-4" />
+                                    <h3 className="content-heading uppercase mb-3 text-sm">{service.name}</h3>
+                                    <p className="content-description text-xs">{service.description}</p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
@@ -218,144 +277,14 @@ export default function RoofRepairPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto space-y-8">
                     <h2 className="content-heading uppercase text-center text-2xl">
-                        Why Choose Mend Roofing
-                    </h2>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {whyMendRoofing.map((item, index) => (
-                            <div key={index} className="bg-card p-6 rounded-lg shadow-md text-center">
-                                <Star className="h-10 w-10 text-primary mx-auto mb-4" />
-                                <h3 className="content-heading uppercase mb-3">{item.title}</h3>
-                                <p className="content-description text-sm">{item.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-                        {trustBadges.map((badge, index) => (
-                            <div key={index} className="bg-card p-6 rounded-lg shadow-md text-center">
-                                <Award className="h-10 w-10 text-primary mx-auto mb-3" />
-                                <h3 className="content-heading uppercase mb-2 text-sm">{badge.name}</h3>
-                                <p className="content-description text-xs">{badge.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Comprehensive Roof Leak Repair Services Section */}
-        <section className="w-full py-16 md:py-24 bg-muted/50">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <h2 className="content-heading uppercase text-center text-2xl">
-                        Comprehensive Roof Leak Repair Services
+                        Why Choose Mend Roofing for Roof Restoration?
                     </h2>
                     <p className="content-description text-center">
-                        Leaks can go unnoticed until serious damage occurs. That's why our team specializes in fast, targeted roof leak repairs. We handle everything from attic moisture to exterior damage, ensuring long-lasting results.
+                        As local roofing experts with years of industry experience, Mend Roofing provides professional roof restoration backed by quality workmanship and superior materials. We focus on long-term value through storm damage, roof restoration, preventative maintenance, and energy savings.
                     </p>
-                    <div className="bg-card p-6 rounded-lg shadow-md mt-6">
-                        <h3 className="content-heading uppercase mb-4">
-                            Leak repair services include:
-                        </h3>
-                        <ul className="space-y-2">
-                            {leakRepairServices.map((service, index) => (
-                                <li key={index} className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                                    <span className="content-description">{service}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="bg-primary/10 p-6 rounded-lg border border-primary/20 text-center">
-                        <p className="content-description font-semibold mb-2">
-                            Available 7 days a week. Emergency roof repair—prompt response for storm damage.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Insurance Claims Section */}
-        <section className="w-full py-16 md:py-24">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <div className="flex items-center gap-4 mb-6 justify-center">
-                        <FileCheck className="h-8 w-8 text-primary" />
-                        <h2 className="content-heading uppercase text-2xl">
-                            Insurance Claims
-                        </h2>
-                    </div>
                     <p className="content-description text-center">
-                        Storm damage is stressful but filing a roofing insurance claim shouldn't be. Mend Roofing simplifies the process from start to finish. They work directly with major insurers to ensure your storm damage repair in Houston or surrounding areas gets covered quickly and fairly.
+                        We proudly serve Spring, Cypress, Tomball, Katy, Houston, and The Woodlands, offering expert solutions that meet the needs of both residential and commercial clients. Whether you're looking for a roofing company in Houston, Cypress, or The Woodlands or comparing options for roof installation Spring we bring trusted service and results you can count on.
                     </p>
-                    <div className="bg-card p-6 rounded-lg shadow-md mt-6">
-                        <h3 className="content-heading uppercase mb-4">
-                            How they help:
-                        </h3>
-                        <ul className="space-y-2">
-                            {insuranceHelp.map((help, index) => (
-                                <li key={index} className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                                    <span className="content-description">{help}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Financing Section */}
-        <section className="w-full py-16 md:py-24 bg-muted/50">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <div className="flex items-center gap-4 mb-6 justify-center">
-                        <CreditCard className="h-8 w-8 text-primary" />
-                        <h2 className="content-heading uppercase text-2xl">
-                            Financing
-                        </h2>
-                    </div>
-                    <p className="content-description text-center">
-                        Affordable roof repair & replacement options. Flexible repair financing through Momnt and Wisetack.
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-6 mt-8">
-                        {financingBenefits.map((benefit, index) => (
-                            <div key={index} className="bg-card p-6 rounded-lg shadow-md text-center">
-                                <CheckCircle className="h-10 w-10 text-primary mx-auto mb-4" />
-                                <p className="content-description font-semibold">{benefit}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Emergency Roof Repairs Section */}
-        <section className="w-full py-16 md:py-24">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <div className="flex items-center gap-4 mb-6 justify-center">
-                        <AlertTriangle className="h-8 w-8 text-primary" />
-                        <h2 className="content-heading uppercase text-2xl">
-                            Emergency Roof Repairs
-                        </h2>
-                    </div>
-                    <p className="content-description text-center">
-                        When severe weather strikes, Mend Roofing provides emergency roof repairs in Houston, Spring, Tomball, and nearby areas to protect your home from further damage fast.
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-6 mt-8">
-                        <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                            <Clock className="h-10 w-10 text-primary mx-auto mb-4" />
-                            <h3 className="content-heading uppercase mb-3">Available 7 days a week</h3>
-                        </div>
-                        <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                            <Zap className="h-10 w-10 text-primary mx-auto mb-4" />
-                            <h3 className="content-heading uppercase mb-3">Same-day service for urgent repairs</h3>
-                        </div>
-                        <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                            <Wind className="h-10 w-10 text-primary mx-auto mb-4" />
-                            <h3 className="content-heading uppercase mb-3">Fast response for storm damage roof repair needs</h3>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -366,7 +295,7 @@ export default function RoofRepairPage() {
                 <div className="max-w-4xl mx-auto space-y-8">
                     <div className="text-center mb-8">
                         <h2 className="content-heading uppercase text-2xl mb-4">
-                            FAQ Highlights
+                            FAQ Highlight
                         </h2>
                         <p className="content-description">
                             Have questions about our services? We're here to help! Contact us anytime, and our expert team will provide the answers and support you need.
@@ -436,7 +365,7 @@ export default function RoofRepairPage() {
                                 Main Office - Katy
                             </p>
                             <p className="text-sm opacity-75">
-                                24285 Katy Fwy Suite 300-18, Katy, TX 77494, United States
+                                Address: 24285 Katy Fwy Suite 300-18, Katy, TX 77494, United States
                             </p>
                         </div>
                         <div className="pt-4 border-t border-primary-foreground/20">
@@ -448,7 +377,7 @@ export default function RoofRepairPage() {
                                 Spring Office
                             </p>
                             <p className="text-sm opacity-75">
-                                24624 Interstate 45 200, Spring, TX 77386
+                                Address: 24624 Interstate 45 200, Spring, TX 77386, United States
                             </p>
                         </div>
                         <div className="pt-4">
@@ -486,16 +415,16 @@ export default function RoofRepairPage() {
                         </div>
                         <div className="bg-card p-6 rounded-lg shadow-md">
                             <CalendarDays className="h-10 w-10 text-primary mx-auto mb-4" />
-                            <h3 className="content-heading uppercase mb-3">2. Schedule an Appointment</h3>
+                            <h3 className="content-heading uppercase mb-3">2. Schedule Appointment</h3>
                             <p className="content-description text-sm">
-                                Assessment and date/time selection
+                                Roof Expert will ask questions and set a date/time for your inspection
                             </p>
                         </div>
                         <div className="bg-card p-6 rounded-lg shadow-md">
                             <CheckCircle className="h-10 w-10 text-primary mx-auto mb-4" />
                             <h3 className="content-heading uppercase mb-3">3. Quality Work</h3>
                             <p className="content-description text-sm">
-                                Work Performed—100% satisfaction, 100+ 5-star reviews
+                                Work performed with 100% satisfaction, over 100+ 5-star reviews
                             </p>
                         </div>
                     </div>
@@ -513,3 +442,4 @@ export default function RoofRepairPage() {
       </div>
     );
 }
+

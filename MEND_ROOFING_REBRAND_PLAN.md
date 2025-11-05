@@ -470,7 +470,7 @@ Consider creating location-specific landing pages for:
 ## 12. Resources & References
 
 - **Mend Roofing Website:** https://mendroofing.com/
-- **Current Template:** Good Guys Roofing (Red theme, Fort Worth area)
+- **Current Template:** Good Guys Roofing (Red theme, Houston, TX area)
 - **Technology Stack:** Next.js 15, React 18, Tailwind CSS, TypeScript
 - **Key Dependencies:** Radix UI, Framer Motion, React Hook Form
 

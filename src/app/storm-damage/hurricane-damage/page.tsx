@@ -13,7 +13,7 @@ export default function HurricaneDamagePage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="hero-heading uppercase">
-                    FORT WORTH'S HURRICANE RESTORATION COMPANY
+                    Houston, TX'S HURRICANE RESTORATION COMPANY
                 </h1>
                  <p className="hero-description max-w-4xl mx-auto mt-4">
                     We take care of our community with full-service storm restoration services and insurance claims assistance.
@@ -56,7 +56,7 @@ export default function HurricaneDamagePage() {
                                 Hurricanes leave damage across their path, and you can never be too prepared for the aftermath. Good Guys Roofing is a family-owned roofing company that provides the timely solutions you need to get back on track.
                             </p>
                             <p className="content-description">
-                                We’ll restore damage to your roofing system with weather-resistant services and comprehensive care that helps you recover while guiding you through the entire hurricane roof repair process. Learn how our Fort Worth storm damage company can bring integrity back to your home or business.
+                                We’ll restore damage to your roofing system with weather-resistant services and comprehensive care that helps you recover while guiding you through the entire hurricane roof repair process. Learn how our Houston, TX storm damage company can bring integrity back to your home or business.
                             </p>
                         </div>
                     </div>

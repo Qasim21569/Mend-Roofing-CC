@@ -14,7 +14,7 @@ export default function HomeInsuranceClaimsPage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="hero-heading uppercase">
-                    ROOF DAMAGE CLAIMS IN FORT WORTH
+                    ROOF DAMAGE CLAIMS IN Houston, TX
                 </h1>
                  <p className="hero-description max-w-4xl mx-auto mt-4">
                     We'll help you file claims professionally so that you can get approved and begin your prompt storm restoration.
@@ -53,10 +53,10 @@ export default function HomeInsuranceClaimsPage() {
                                 Home Insurance Claim Repairs
                             </h2>
                             <p className="content-description">
-                                Unsure where to begin your Fort Worth storm restoration process? At Good Guys Roofing, we treat every step with precision to help you recover quickly. We know that dealing with roof damage isn't easy, so we're here to provide helpful guidance along the way. As we quell the storm, we look at the whole picture—and that begins with professional insurance roof claims.
+                                Unsure where to begin your Houston, TX storm restoration process? At Good Guys Roofing, we treat every step with precision to help you recover quickly. We know that dealing with roof damage isn't easy, so we're here to provide helpful guidance along the way. As we quell the storm, we look at the whole picture—and that begins with professional insurance roof claims.
                             </p>
                             <p className="content-description">
-                                The steps following a storm can be overwhelming as high winds, heavy rain, and fallen trees cause damage to your property. At Good Guys Roofing, we're here to clean up the mess with professional storm damage services and attentive guidance through the complicated Fort Worth roof insurance claims process.
+                                The steps following a storm can be overwhelming as high winds, heavy rain, and fallen trees cause damage to your property. At Good Guys Roofing, we're here to clean up the mess with professional storm damage services and attentive guidance through the complicated Houston, TX roof insurance claims process.
                             </p>
                         </div>
                     </div>

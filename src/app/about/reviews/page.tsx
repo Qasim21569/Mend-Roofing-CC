@@ -53,7 +53,7 @@ export default function ReviewsPage() {
                              <div className="mt-4 space-y-2">
                                 <h3 className="content-heading uppercase">HEADQUARTERS</h3>
                                 <address className="text-sm not-italic text-muted-foreground">
-                                    <p>Fort Worth, Texas (Serving Tarrant, Johnson, and Parker counties)</p>
+                                    <p>Houston, TX, Texas (Serving Tarrant, Johnson, and Parker counties)</p>
                                     <p>817-233-4524</p>
                                 </address>
                             </div>

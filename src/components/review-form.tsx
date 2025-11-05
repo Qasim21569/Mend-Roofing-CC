@@ -52,7 +52,7 @@ const reviewSchema = z.object({
 
 type ReviewFormValues = z.infer<typeof reviewSchema>;
 
-const serviceLocations = ["Fort Worth", "Arlington", "Grand Prairie", "Other"];
+const serviceLocations = ["Houston, TX", "Arlington", "Grand Prairie", "Other"];
 const serviceTypes = [
   "Roof Installation",
   "Roof Repair",

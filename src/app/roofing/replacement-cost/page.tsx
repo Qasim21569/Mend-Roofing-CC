@@ -14,10 +14,10 @@ export default function RoofReplacementCostPage() {
         <section className="w-full py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h1 className="hero-heading uppercase">
-                    ROOF REPLACEMENT COST IN FORT WORTH
+                    ROOF REPLACEMENT COST IN Houston, TX
                 </h1>
                  <p className="hero-description max-w-4xl mx-auto mt-4">
-                    Discover what impacts roof replacement costs in Fort Worth.
+                    Discover what impacts roof replacement costs in Houston, TX.
                 </p>
             </div>
         </section>
@@ -57,16 +57,16 @@ export default function RoofReplacementCostPage() {
                                 Cost of Roof Replacement
                             </h2>
                             <p className="content-description">
-                                Understanding the cost of roof replacement in Fort Worth, TX is essential for homeowners and commercial property owners alike. With changing weather patterns and wear over time, replacing a roof becomes a necessary investment. At Good Guys, we provide transparent pricing and quality craftsmanship tailored to the unique needs of this region.
+                                Understanding the cost of roof replacement in Houston, TX, TX is essential for homeowners and commercial property owners alike. With changing weather patterns and wear over time, replacing a roof becomes a necessary investment. At Good Guys, we provide transparent pricing and quality craftsmanship tailored to the unique needs of this region.
                             </p>
                             <p className="content-description">
-                                Several factors influence the cost of roof replacement in Fort Worth, TX, including roofing material, roof size, slope, structural condition, and labor costs. For example, architectural shingles cost more than standard three-tab shingles but offer greater durability. Additionally, roofing permits and disposal fees contribute to overall costs.
+                                Several factors influence the cost of roof replacement in Houston, TX, TX, including roofing material, roof size, slope, structural condition, and labor costs. For example, architectural shingles cost more than standard three-tab shingles but offer greater durability. Additionally, roofing permits and disposal fees contribute to overall costs.
                             </p>
                             <h3 className="content-heading uppercase pt-4">
                                 KEY BENEFITS FOR PROPERTY
                             </h3>
                              <p className="content-description">
-                                A new roof is more than just a structural necessity; it's an investment in your property's value and safety. In Fort Worth, a new roof can significantly enhance your home's resilience to storms, improve energy efficiency, and boost curb appeal. With our high-quality materials and expert installation, you can enjoy peace of mind knowing your property is well-protected.
+                                A new roof is more than just a structural necessity; it's an investment in your property's value and safety. In Houston, TX, a new roof can significantly enhance your home's resilience to storms, improve energy efficiency, and boost curb appeal. With our high-quality materials and expert installation, you can enjoy peace of mind knowing your property is well-protected.
                             </p>
                         </div>
                     </div>

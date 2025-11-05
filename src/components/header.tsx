@@ -16,13 +16,9 @@ const navLinks = [
     label: "Residential Roofing",
     subLinks: [
         { href: "/roofing/replacement", label: "Roof Replacement" },
+        { href: "/roofing/gaf-roofing", label: "GAF Roofing System" },
         { href: "/roofing/tile-roofing", label: "Tile Roofing" },
-        { href: "/roofing/gaf-roofing", label: "GAF Roofing" },
-        { href: "/roofing/asphalt-shingles", label: "Asphalt Shingles" },
-        { href: "/roofing/repair", label: "Roof Repair" },
-        { href: "/roofing/types", label: "Roof Types" },
-        { href: "/roofing/metal-roof", label: "Metal Roof" },
-        { href: "/roofing/replacement-cost", label: "Roof Replacement Cost" },
+        { href: "/roofing/asphalt-shingles", label: "Asphalt Shingle Roofing" },
     ]
   },
   {
@@ -30,32 +26,34 @@ const navLinks = [
     label: "Commercial Roofing",
     subLinks: [
       { href: "/commercial-roofing/replacement", label: "Roof Replacement" },
-      { href: "/commercial-roofing/repair", label: "Roof Repair" },
-      { href: "/commercial-roofing/types", label: "Roof Types" },
+      { href: "/commercial-roofing/restoration", label: "Roof Restoration" },
+      { href: "/commercial-roofing/tpo-roofing", label: "TPO Roofing" },
+      { href: "/commercial-roofing/multi-family-roofing", label: "Multi Family Roofing" },
     ]
   },
   {
-    href: "/storm-damage",
-    label: "Storm Damage",
+    href: "/roofing/repair",
+    label: "Roof repair",
     subLinks: [
-      { href: "/storm-damage/home-insurance-claims", label: "Insurance Claims" },
-      { href: "/storm-damage/hail-damage", label: "Hail Damage" },
-      { href: "/storm-damage/hurricane-damage", label: "Hurricane Damage" },
+      { href: "/storm-damage", label: "Storm Damage" },
+      { href: "/roofing/repair/inspections", label: "Roof Inspections" },
+      { href: "/roofing/repair/maintenance", label: "Roof Maintenance" },
     ]
   },
+  
   {
     href: "/about",
-    label: "About",
+    label: "About Us",
     subLinks: [
       { href: "/about", label: "About Us" },
       { href: "/about/blog", label: "Blog" },
       { href: "/about/faqs", label: "FAQs" },
-      { href: "/about/reviews", label: "Reviews" },
-      { href: "/gallery", label: "Gallery" },
-      { href: "/about/past-projects", label: "Past Projects" },
-      { href: "/about/warranty", label: "Warranty" },
-      { href: "/about/financing", label: "Financing" },
-      { href: "/service-areas", label: "Service Areas" },
+      // { href: "/about/reviews", label: "Reviews" },
+      // { href: "/gallery", label: "Gallery" },
+      // { href: "/about/past-projects", label: "Past Projects" },
+      // { href: "/about/warranty", label: "Warranty" },
+      // { href: "/about/financing", label: "Financing" },
+      // { href: "/service-areas", label: "Service Areas" },
     ]
   },
   {
@@ -64,7 +62,7 @@ const navLinks = [
   },
 ];
 
-function MendRoofingLogo({ isScrolled }: { isScrolled: boolean }) {
+function MendRoofingLogo({ isScrolled = false }: { isScrolled?: boolean }) {
   return (
     <div className={cn(
       "relative ml-0 md:ml-8 lg:ml-12 transition-all duration-300",

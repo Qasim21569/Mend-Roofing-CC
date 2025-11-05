@@ -15,7 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const serviceAreas = [
-    'Fort Worth',
+    'Houston, TX',
     'Arlington',
     'Grand Prairie',
     'Burleson',

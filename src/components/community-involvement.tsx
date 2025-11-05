@@ -24,16 +24,16 @@ export function CommunityInvolvement() {
               COMMUNITY INVOLVEMENT
             </p>
             <h2 className="hero-heading text-primary mb-4">
-              GIVING BACK TO FORT WORTH
+              GIVING BACK TO Houston, TX
             </h2>
             <p className="content-description text-muted-foreground mb-6 max-w-lg">
               We're proud to support communities in our area by partnering with
-              Habitat for Humanity of Fort Worth, helping build a neighborhood
+              Habitat for Humanity of Houston, TX, helping build a neighborhood
               that's ready for a more empowering future.
             </p>
             <Link href="#" className="flex items-center gap-2 text-destructive font-semibold hover:underline">
               <CheckCircle className="h-5 w-5" />
-              <span>Habitat for Humanity of Fort Worth</span>
+              <span>Habitat for Humanity of Houston, TX</span>
             </Link>
           </div>
         </div>
