@@ -22,47 +22,61 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-16">
           {/* Left Side - Content */}
-          <div className="space-y-4 sm:space-y-6 lg:space-y-8 order-1 lg:order-1">
-            <h1 className="hero-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-secondary leading-tight uppercase">
+          <div className="space-y-4 sm:space-y-5 lg:space-y-6 order-1 lg:order-1">
+            <h1 className="hero-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-tight">
               Trusted Roofing Company for Roof Replacements, Repairs & New Installations
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-secondary/70 leading-relaxed max-w-2xl">
+            <p className="text-lg sm:text-xl md:text-2xl text-primary font-semibold">
+              Affordable & Reliable Roofing Services in Houston, TX
+            </p>
+            
+            <p className="text-secondary/70 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
               We provide expert roofing services for residential and commercial properties throughout Houston and Southeast Texas. From storm damage repairs to complete roof replacements, our certified team delivers quality craftsmanship you can trust.
             </p>
 
             {/* Certification Badges */}
-            <div className="flex items-center gap-4 sm:gap-6 flex-wrap pt-4">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+            <div className="flex items-center gap-4 sm:gap-6 flex-wrap pt-2">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 relative">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge1.png?alt=media&token=your-token"
                   alt="Owens Corning Preferred Contractor"
-                  width={80}
-                  height={80}
+                  width={64}
+                  height={64}
                   className="object-contain"
                 />
               </div>
-              <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 relative">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge2.png?alt=media&token=your-token"
                   alt="CertainTeed SELECT ShingleMaster"
-                  width={80}
-                  height={80}
+                  width={64}
+                  height={64}
                   className="object-contain"
                 />
               </div>
-              <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 relative">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge3.png?alt=media&token=your-token"
                   alt="BBB Accredited Business"
-                  width={80}
-                  height={80}
+                  width={64}
+                  height={64}
                   className="object-contain"
                 />
               </div>
-              <div className="w-16 h-16 sm:w-20 sm:h-20 relative bg-[#C8102E] flex items-center justify-center p-2">
-                <span className="text-white font-bold text-2xl sm:text-3xl">GAF</span>
+              <div className="w-14 h-14 sm:w-16 sm:h-16 relative bg-[#C8102E] flex items-center justify-center rounded">
+                <span className="text-white font-bold text-xl sm:text-2xl">GAF</span>
               </div>
+            </div>
+
+            {/* Primary CTA */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+              <button className="bg-primary hover:bg-primary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 rounded-lg shadow-lg hover:shadow-xl transition-all w-full sm:w-auto font-semibold">
+                <a href="tel:3462363652">📞 Call: (346) 236-3652</a>
+              </button>
+              <button className="bg-secondary hover:bg-secondary/90 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 rounded-lg shadow-lg hover:shadow-xl transition-all w-full sm:w-auto font-semibold">
+                <a href="#contact">Get Free Estimate</a>
+              </button>
             </div>
           </div>
 
