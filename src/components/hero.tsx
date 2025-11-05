@@ -28,44 +28,41 @@ export function Hero() {
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-primary font-semibold">
-              Affordable & Reliable Roofing Services in Houston, TX
+              Affordable & Reliable Roofing Services in Houston & Austin
             </p>
             
             <p className="text-secondary/70 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
-              We provide expert roofing services for residential and commercial properties throughout Houston and Southeast Texas. From storm damage repairs to complete roof replacements, our certified team delivers quality craftsmanship you can trust.
+              We provide expert roofing services for residential and commercial properties throughout Houston and Austin. From storm damage repairs to complete roof replacements, our certified team delivers quality craftsmanship you can trust.
             </p>
 
             {/* Certification Badges */}
-            <div className="flex items-center gap-4 sm:gap-6 flex-wrap pt-2">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 relative">
+            <div className="flex items-center gap-3 sm:gap-4 flex-wrap pt-2">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 relative">
                 <Image
-                  src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge1.png?alt=media&token=your-token"
-                  alt="Owens Corning Preferred Contractor"
-                  width={64}
-                  height={64}
-                  className="object-contain"
-                />
-              </div>
-              <div className="w-14 h-14 sm:w-16 sm:h-16 relative">
-                <Image
-                  src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge2.png?alt=media&token=your-token"
+                  src="/certain-tee.png"
                   alt="CertainTeed SELECT ShingleMaster"
-                  width={64}
-                  height={64}
-                  className="object-contain"
+                  width={80}
+                  height={80}
+                  className="object-contain w-full h-full"
                 />
               </div>
-              <div className="w-14 h-14 sm:w-16 sm:h-16 relative">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 relative">
                 <Image
-                  src="https://firebasestorage.googleapis.com/v0/b/jackpot-jungle-c1020.firebasestorage.app/o/badge3.png?alt=media&token=your-token"
+                  src="/bbb.png"
                   alt="BBB Accredited Business"
-                  width={64}
-                  height={64}
-                  className="object-contain"
+                  width={80}
+                  height={80}
+                  className="object-contain w-full h-full"
                 />
               </div>
-              <div className="w-14 h-14 sm:w-16 sm:h-16 relative bg-[#C8102E] flex items-center justify-center rounded">
-                <span className="text-white font-bold text-xl sm:text-2xl">GAF</span>
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 relative">
+                <Image
+                  src="/gaf-master-elite.png"
+                  alt="GAF Master Elite Contractor"
+                  width={80}
+                  height={80}
+                  className="object-contain w-full h-full"
+                />
               </div>
             </div>
 
