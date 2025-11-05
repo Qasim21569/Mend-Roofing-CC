@@ -86,7 +86,7 @@ export function Testimonials() {
               align: "start",
               loop: testimonials.length > 2,
             }}
-            className="w-full"
+            className="w-full overflow-hidden"
           >
             <CarouselContent className="-ml-4">
               {testimonials.map((testimonial, index) => {
@@ -121,8 +121,8 @@ export function Testimonials() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="text-foreground border-border hover:text-primary -left-12 bg-background hover:bg-background" />
-            <CarouselNext className="text-foreground border-border hover:text-primary -right-12 bg-background hover:bg-background" />
+            <CarouselPrevious className="text-foreground border-border hover:text-primary left-2 sm:-left-12 bg-background hover:bg-background" />
+            <CarouselNext className="text-foreground border-border hover:text-primary right-2 sm:-right-12 bg-background hover:bg-background" />
           </Carousel>
       </div>
     </section>
